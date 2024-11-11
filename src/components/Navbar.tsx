@@ -16,8 +16,8 @@ const Navbar: React.FC<NavbarProps> = ({
   servicesRef,
   contactRef,
 }) => {
-  const [aboutDropdown, setAboutDropdown] = useState(false);
-  const [businessDropdown, setBusinessDropdown] = useState(false);
+  // const [aboutDropdown, setAboutDropdown] = useState(false);
+  // const [businessDropdown, setBusinessDropdown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -34,8 +34,8 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="lg:flex items-center gap-8 hidden font-light tracking-wide">
           <div
             className="relative group"
-            onMouseEnter={() => setAboutDropdown(true)}
-            onMouseLeave={() => setAboutDropdown(false)}
+            // onMouseEnter={() => setAboutDropdown(true)}
+            // onMouseLeave={() => setAboutDropdown(false)}
           >
             <p
               className="flex font-black items-center cursor-pointer text-gray-900 hover:text-gray-700 transition-colors duration-300 font-josefin"
@@ -57,8 +57,8 @@ const Navbar: React.FC<NavbarProps> = ({
 
           <div
             className="relative group"
-            onMouseEnter={() => setBusinessDropdown(true)}
-            onMouseLeave={() => setBusinessDropdown(false)}
+            // onMouseEnter={() => setBusinessDropdown(true)}
+            // onMouseLeave={() => setBusinessDropdown(false)}
           >
             <p className="flex font-bold items-center cursor-pointer text-gray-800 hover:text-gray-700 transition-colors duration-300 font-josefin">
               Our Brands <MdArrowDropDown className="text-xl" />
