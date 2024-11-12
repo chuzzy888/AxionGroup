@@ -326,7 +326,7 @@ function SectorDetails() {
           <h3 className="text-3xl font-bold text-gray-800 mt-6 mb-4 text-center border-b-2 border-gray-200 pb-2 font-josefin">
             About This Sector
           </h3>
-          <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
+          <p className="text-lg text-gray-600 leading-relaxed mb-6 px-28 text-center">
             {sector.aboutsect}
           </p>
 

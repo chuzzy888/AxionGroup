@@ -17,9 +17,9 @@ const Footer = () => {
           <div>
             <h2 className="font-bold mb-4">Contact Us</h2>
             <ul className="space-y-2">
-              <li>Breeze Tools</li>
-              <li> Content Writer</li>
-              <li> Email Writer</li>
+              <li className="text-blue-400">info@axiongroup.com</li>
+              <li>7, Off Port-Harcout Road Owerri</li>
+              <li> +234 8180001124</li>
             </ul>
           </div>
           <div>

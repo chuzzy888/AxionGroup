@@ -27,7 +27,7 @@ import {
   FaEye,
   FaLongArrowAltRight,
 } from "react-icons/fa";
-import { FiArrowDownRight } from "react-icons/fi";
+import { FiArrowDownRight, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 interface BrandShowcaseItem {
@@ -315,14 +315,14 @@ export default function Home() {
           <div className="flex flex-nowrap justify-center items-center gap-4">
             <a
               href="#explore"
-              className="flex items-center px-6 py-3 font-josefin bg-white text-teal-700 rounded-full font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105"
+              className="flex items-center px-5 py-2 font-josefin bg-white text-teal-700 rounded-full font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105"
             >
               Learn More
               <FiArrowDownRight className="text-2xl" />
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 bg-transparent font-josefin border-2 border-white text-white rounded-full font-semibold hover:bg-darkBlue hover:text-white transition duration-300 transform hover:scale-105"
+              className="px-5 py-2 bg-transparent font-josefin border-2 border-white text-white rounded-full font-semibold hover:bg-darkBlue hover:text-white transition duration-300 transform hover:scale-105"
             >
               Contact Us
             </a>
@@ -587,7 +587,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-center mb-4 font-josefin">
               Our Services
             </h2>
-            <p className="text-center text-gray-600 mb-12 font-lato">
+            <p className="text-center text-gray-600 mb-12 font-lato px-5">
               Axion Group delivers a diverse range of services across multiple
               sectors, ensuring quality, innovation, and excellence.
             </p>
@@ -721,6 +721,73 @@ export default function Home() {
           </div>
         </Fade>
       </section> */}
+
+      <section className="bg-gray-50 py-16 px-4" ref={contactRef}>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 font-josefin">
+            Connect with one of our global offices
+          </h2>
+          <div className="flex flex-col md:flex-row items-stretch md:space-x-8">
+            {/* Map Section */}
+            <div className="flex-1 mb-8 md:mb-0 h-[300px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.095973358263!2d-71.08457442493454!3d42.368089279188066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a8485e9b65%3A0xd3d1518881b2a2ae!2sHubSpot!5e0!3m2!1sen!2sus!4v1630421006507!5m2!1sen!2sus"
+                width="100%"
+                height="138%"
+                className="rounded-lg shadow-lg"
+                allowFullScreen={true}
+                loading="lazy"
+                title="Office Location"
+              ></iframe>
+            </div>
+
+            {/* Contact Information Section */}
+            <div className="bg-white rounded-lg shadow-lg p-8 w-full md:w-1/3 h-full">
+              <h3 className="text-xl font-bold mb-4 font-josefin">
+                Global Headquarters
+              </h3>
+              <div className="flex items-start mb-4">
+                <FiMapPin className="text-teal-500 text-2xl mr-3" />
+                <p className="text-gray-600">
+                  2 Canal Park
+                  <br />
+                  Cambridge, MA 02141
+                  <br />
+                  United States
+                </p>
+              </div>
+              <div className="flex items-start mb-4">
+                <FiPhone className="text-teal-500 text-2xl mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-800 font-josefin">
+                    Phone / Fax
+                  </p>
+                  <p className="text-gray-600">
+                    +1 888 HUBSPOT
+                    <br />
+                    (+1 888 482 7768)
+                  </p>
+                  <p className="text-gray-600 mt-2">Fax: +1 617 812 5820</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <FiMail className="text-teal-500 text-2xl mr-3" />
+                <div>
+                  <p className="font-semibold text-gray-800 font-josefin">
+                    Press / Media / Blogger Information
+                  </p>
+                  <p className="font-semibold text-gray-800 mt-2 font-lato">
+                    Leave Us A Mail*{" "}
+                  </p>
+                  <a href="#" className="text-blue-600 hover:underline">
+                    info@axiongroup.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

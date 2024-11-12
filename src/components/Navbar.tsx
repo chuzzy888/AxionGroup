@@ -1,5 +1,5 @@
 import { useState, RefObject } from "react";
-import { MdArrowDropDown, MdMenu, MdClose } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 import logo from "../assets/images/logo.jpeg";
 import { Link } from "react-router-dom";
 
@@ -38,10 +38,10 @@ const Navbar: React.FC<NavbarProps> = ({
             // onMouseLeave={() => setAboutDropdown(false)}
           >
             <p
-              className="flex font-black items-center cursor-pointer text-gray-900 hover:text-gray-700 transition-colors duration-300 font-josefin"
+              className="flex font-medium items-center cursor-pointer text-gray-900 hover:text-blue-700 transition-colors duration-300 font-josefin"
               onClick={() => scrollToSection(aboutRef)}
             >
-              About Us <MdArrowDropDown className="text-xl" />
+              About Us
             </p>
             {/* {aboutDropdown && (
               <div className="absolute top-full left-0 w-48 bg-white shadow-lg rounded-md z-50">
@@ -60,8 +60,8 @@ const Navbar: React.FC<NavbarProps> = ({
             // onMouseEnter={() => setBusinessDropdown(true)}
             // onMouseLeave={() => setBusinessDropdown(false)}
           >
-            <p className="flex font-bold items-center cursor-pointer text-gray-800 hover:text-gray-700 transition-colors duration-300 font-josefin">
-              Our Brands <MdArrowDropDown className="text-xl" />
+            <p className="flex font-medium items-center cursor-pointer text-gray-800 hover:text-blue-700 transition-colors duration-300 font-josefin">
+              Our Brands
             </p>
             {/* {businessDropdown && (
               <div className="absolute top-full left-0 w-48 bg-white text-black shadow-lg rounded-md z-50">
@@ -82,6 +82,12 @@ const Navbar: React.FC<NavbarProps> = ({
           >
             Media
           </p>
+          {/* 
+          <Link to={"/contact"}>
+            <p className="navbar-link text-gray-800 cursor-pointer font-inter hover:text-blue-700 font-medium font-josefin">
+              Contact
+            </p>
+          </Link> */}
 
           <p
             className="navbar-link text-gray-800 cursor-pointer font-inter hover:text-blue-700 font-medium font-josefin"
