@@ -7,6 +7,7 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 import logo from "../assets/images/lgft.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,31 +18,56 @@ const Footer = () => {
           <div>
             <h2 className="font-bold mb-4">Contact Us</h2>
             <ul className="space-y-2">
-              <li className="text-blue-400">info@axiongroup.com</li>
+              <a href="mailto:info@axiongroupltd.com">
+                {" "}
+                <li className="text-blue-400">info@axiongroupltd.com</li>
+              </a>
               <li>7, Off Port-Harcout Road Owerri</li>
-              <li> +234 8180001124</li>
+              <li> +234-8113- 405555</li>
             </ul>
           </div>
           <div>
             <h2 className="font-bold mb-4">Our Brand</h2>
             <ul className="space-y-2">
-              <li>Axion Pharmaceuticals</li>
-              <li>Axion Suites</li>
-              <li>Axion Foam Products</li>
-              <li>Axion Petroplus</li>
-              <li>Axion Farms</li>
-              <li>Axion Homes</li>
-              <li>Axion Autos</li>
-              <li>Axion Logistics</li>
+              {" "}
+              <li className="hover:text-red-500">
+                <Link to={"/sector/pharmaceuticals"}>
+                  Axion Pharmaceuticals{" "}
+                </Link>
+              </li>{" "}
+              <li className="hover:text-red-500">
+                {" "}
+                <Link to={"/sector/Hospitality"}>Axion Suites </Link>
+              </li>
+              <li className="hover:text-red-500">
+                {" "}
+                <Link to={"/sector/Foam%20Products"}>Axion Foam Products </Link>
+              </li>
+              <li className="hover:text-red-500">
+                {" "}
+                <Link to={"/sector/Oil%20and%20Gas"}> Axion Petroplus </Link>
+              </li>
+              <li className="hover:text-red-500">
+                <Link to={"/sector/Agriculture"}>Axion Farms</Link>{" "}
+              </li>
+              <li className="hover:text-red-500">
+                <Link to={"/sector/Real%20Estate"}>Axion Homes</Link>{" "}
+              </li>
+              <li className="hover:text-red-500">
+                <Link to={"/sector/Automotive"}>Axion Autos</Link>
+              </li>
+              <li className="hover:text-red-500">
+                <Link to={"/sector/Logistics"}>Axion Logistics</Link>
+              </li>
             </ul>
           </div>
           <div>
             <h2 className="font-bold mb-4">Quick Links</h2>
             <ul className="space-y-2">
-              <li>Contact Us</li>
-              <li>Our Story</li>
-              <li>About Us</li>
-              <li>Our Brand</li>
+              <li className="hover:text-red-500">Contact Us</li>
+              <li className="hover:text-red-500">Our Story</li>
+              <li className="hover:text-red-500">About Us</li>
+              <li className="hover:text-red-500">Our Brand</li>
             </ul>
           </div>
           <div>
@@ -68,10 +94,18 @@ const Footer = () => {
 
           {/* Social Media Links */}
           <div className="flex space-x-4 text-2xl">
-            <a href="#" className="hover:text-gray-400">
+            <a
+              href="https://www.facebook.com/profile.php?id=100063891948711"
+              className="hover:text-gray-400"
+              target="_blank"
+            >
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-gray-400">
+            <a
+              href="https://www.instagram.com/axiongroup?igsh=aXFremE2bndwMXE5 "
+              className="hover:text-gray-400"
+              target="_blank"
+            >
               <FaInstagram />
             </a>
             <a href="#" className="hover:text-gray-400">
@@ -83,7 +117,11 @@ const Footer = () => {
             <a href="#" className="hover:text-gray-400">
               <FaYoutube />
             </a>
-            <a href="#" className="hover:text-gray-400">
+            <a
+              href="https://www.tiktok.com/@axiongroupworld?_t=8rMIpkoOhwW&_r=1"
+              className="hover:text-gray-400"
+              target="_blank"
+            >
               <FaTiktok />
             </a>
           </div>

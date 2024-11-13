@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import phc from "../assets/images/phc.jpg";
 import autos from "../assets/images/ptp.jpg";
 import lgc from "../assets/images/lgc.jpg";
-import fms from "../assets/images/fms.jpeg";
+import fms from "../assets/images/mat.jpeg";
 import p1 from "../assets/images/p1.jpg";
 import p2 from "../assets/images/p2.jpg";
 import p3 from "../assets/images/p3.jpg";

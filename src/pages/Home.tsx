@@ -6,7 +6,7 @@ import hr from "../assets/images/him.jpg";
 import phc from "../assets/images/phc.jpg";
 import autos from "../assets/images/ptp.jpg";
 import lgc from "../assets/images/lgc.jpg";
-import fms from "../assets/images/fms.jpeg";
+import fms from "../assets/images/mat.jpeg";
 
 import teamMember1 from "../assets/images/dj.jpeg";
 import tech from "../assets/images/tech.jpg";
@@ -315,6 +315,7 @@ export default function Home() {
           <div className="flex flex-nowrap justify-center items-center gap-4">
             <a
               href="#explore"
+              onClick={() => scrollToSection(aboutRef)}
               className="flex items-center px-5 py-2 font-josefin bg-white text-teal-700 rounded-full font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105"
             >
               Learn More
@@ -322,6 +323,7 @@ export default function Home() {
             </a>
             <a
               href="#contact"
+              onClick={() => scrollToSection(contactRef)}
               className="px-5 py-2 bg-transparent font-josefin border-2 border-white text-white rounded-full font-semibold hover:bg-darkBlue hover:text-white transition duration-300 transform hover:scale-105"
             >
               Contact Us
@@ -749,11 +751,10 @@ export default function Home() {
               <div className="flex items-start mb-4">
                 <FiMapPin className="text-teal-500 text-2xl mr-3" />
                 <p className="text-gray-600">
-                  2 Canal Park
+                  7, Axion Road
                   <br />
-                  Cambridge, MA 02141
-                  <br />
-                  United States
+                  Off Port-Harcout Road <br />
+                  Owerri Nigeria
                 </p>
               </div>
               <div className="flex items-start mb-4">
@@ -763,11 +764,11 @@ export default function Home() {
                     Phone / Fax
                   </p>
                   <p className="text-gray-600">
-                    +1 888 HUBSPOT
+                    +234 8180001124
                     <br />
-                    (+1 888 482 7768)
+                    (+234 8167492476 )
                   </p>
-                  <p className="text-gray-600 mt-2">Fax: +1 617 812 5820</p>
+                  <p className="text-gray-600 mt-2">Fax: +234 8113 805555</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -779,8 +780,11 @@ export default function Home() {
                   <p className="font-semibold text-gray-800 mt-2 font-lato">
                     Leave Us A Mail*{" "}
                   </p>
-                  <a href="#" className="text-blue-600 hover:underline">
-                    info@axiongroup.com
+                  <a
+                    href="mailto:info@axiongroupltd.com"
+                    className="text-blue-600 hover:underline"
+                  >
+                    info@axiongroupltd.com
                   </a>
                 </div>
               </div>
