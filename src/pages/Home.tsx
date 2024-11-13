@@ -735,7 +735,7 @@ export default function Home() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31773.945773367526!2d6.9930739!3d5.4558887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10425bb41e1dda25%3A0x602179bb4979e021!2sAxion%20Honors!5e0!3m2!1sen!2sng!4v1731513886964!5m2!1sen!2sng"
                 width="100%"
-                height="138%"
+                height="132%"
                 className="rounded-lg shadow-lg"
                 allowFullScreen={true}
                 loading="lazy"
@@ -764,11 +764,11 @@ export default function Home() {
                     Phone / Fax
                   </p>
                   <p className="text-gray-600">
-                    +234 8180001124
+                    +234 8113105555
                     <br />
-                    (+234 8167492476 )
+                    (+234 8116705555 )
                   </p>
-                  <p className="text-gray-600 mt-2">Fax: +234 8113 805555</p>
+                  {/* <p className="text-gray-600 mt-2">Fax: +234 8113 805555</p> */}
                 </div>
               </div>
               <div className="flex items-start">
