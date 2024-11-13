@@ -60,7 +60,10 @@ const Navbar: React.FC<NavbarProps> = ({
             // onMouseEnter={() => setBusinessDropdown(true)}
             // onMouseLeave={() => setBusinessDropdown(false)}
           >
-            <p className="flex font-medium items-center cursor-pointer text-gray-800 hover:text-blue-700 transition-colors duration-300 font-josefin">
+            <p
+              className="flex font-medium items-center cursor-pointer text-gray-800 hover:text-blue-700 transition-colors duration-300 font-josefin"
+              onClick={() => scrollToSection(servicesRef)}
+            >
               Our Brands
             </p>
             {/* {businessDropdown && (
@@ -125,6 +128,14 @@ const Navbar: React.FC<NavbarProps> = ({
 
           {/* Centered Menu Links */}
           <div className="text-black font-josefin font-black text-2xl tracking-wide space-y-8 ">
+            <p
+              className="cursor-pointer hover:text-red-800 text-red-500"
+              onClick={() => {
+                setMenuOpen(false);
+              }}
+            >
+              Home
+            </p>
             <p
               className="cursor-pointer hover:text-red-800"
               onClick={() => {

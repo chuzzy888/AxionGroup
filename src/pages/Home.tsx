@@ -733,7 +733,7 @@ export default function Home() {
             {/* Map Section */}
             <div className="flex-1 mb-8 md:mb-0 h-[300px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.095973358263!2d-71.08457442493454!3d42.368089279188066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a8485e9b65%3A0xd3d1518881b2a2ae!2sHubSpot!5e0!3m2!1sen!2sus!4v1630421006507!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31773.945773367526!2d6.9930739!3d5.4558887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10425bb41e1dda25%3A0x602179bb4979e021!2sAxion%20Honors!5e0!3m2!1sen!2sng!4v1731513886964!5m2!1sen!2sng"
                 width="100%"
                 height="138%"
                 className="rounded-lg shadow-lg"

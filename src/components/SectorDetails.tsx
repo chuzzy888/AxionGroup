@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import phc from "../assets/images/phc.jpg";
@@ -291,9 +291,19 @@ function SectorDetails() {
       {/* Hero Section with Background Image */}
       <div className="bg-gray-100 py-16 px-4">
         <div className="text-center mb-12">
+          <p className="text-xl font-bold text-blue-900 mb-4 font-josefin">
+            <Link to={"/"}>
+              {" "}
+              <span className="text-red-600 hover:text-red-500"> Home</span>
+            </Link>{" "}
+            / About
+          </p>
+          <br />
+
           <h1 className="text-4xl font-bold text-gray-800 mb-4 font-josefin">
             About Axion {sector.name}
           </h1>
+
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-lato">
             {sector.description}
           </p>
@@ -326,7 +336,7 @@ function SectorDetails() {
           <h3 className="text-3xl font-bold text-gray-800 mt-6 mb-4 text-center border-b-2 border-gray-200 pb-2 font-josefin">
             About This Sector
           </h3>
-          <p className="text-lg text-gray-600 leading-relaxed mb-6 px-28 text-center">
+          <p className="text-lg text-gray-600 leading-relaxed mb-6 md:px-28 md:text-center">
             {sector.aboutsect}
           </p>
 
