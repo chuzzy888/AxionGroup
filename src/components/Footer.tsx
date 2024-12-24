@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 font-lato">
+    <footer className="bg-gray-900 text-white py-8 font-josefin">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Footer Links */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

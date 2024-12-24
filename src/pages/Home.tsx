@@ -7,6 +7,7 @@ import phc from "../assets/images/phc.jpg";
 import autos from "../assets/images/ptp.jpg";
 import lgc from "../assets/images/lgc.jpg";
 import fms from "../assets/images/mat.jpeg";
+import bghe from "../assets/images/bghe.jpg";
 
 import teamMember1 from "../assets/images/dj.jpeg";
 import tech from "../assets/images/tech.jpg";
@@ -271,20 +272,21 @@ export default function Home() {
         servicesRef={servicesRef}
         contactRef={contactRef}
       />
-      {/* Hero Section */}
 
-      <section className="relative py-8 lg:py-0 lg:h-screen bg-gradient-to-r from-teal-600 via-blue-700 to-purple-700 flex items-center">
-        {/* Background Elements */}
-        <div className="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-b from-white/10 to-transparent rounded-bl-full pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 h-full w-1/3 bg-gradient-to-t from-white/10 to-transparent rounded-tr-full pointer-events-none"></div>
+      {/* Hero Section */}
+      <section
+        className="relative bg-cover bg-center bg-no-repeat py-12 lg:py-0 lg:h-screen h-[500px] flex items-center"
+        style={{
+          backgroundImage: `url(${bghe})`, // Replace with your image path
+        }}
+      >
+        {/* Overlay for reduced brightness */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Content Wrapper */}
-        <div className="container mx-auto px-6 lg:px-16 flex flex-col items-start justify-center h-full space-y-8 text-white">
+        <div className="container mx-auto px-6 lg:px-16 flex flex-col items-start justify-center h-full text-white z-10">
           {/* Main Heading */}
-          <h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight max-w-3xl font-josefin"
-            // style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight max-w-3xl font-josefin">
             Drive Innovation <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">
               Across Boundaries
@@ -292,39 +294,25 @@ export default function Home() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-base sm:text-lg lg:text-xl max-w-lg font-josefin">
+          <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-lg font-josefin">
             Explore our advanced solutions in healthcare, energy, logistics, and
             more, designed to break barriers and bring the world closer.
           </p>
 
           {/* Buttons */}
-          {/* <div className="flex space-x-6">
-            <a
-              href="#explore"
-              className="px-8 py-4 bg-white text-teal-700 rounded-full font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105"
-            >
-              Discover More
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-darkBlue hover:text-white transition duration-300 transform hover:scale-105"
-            >
-              Contact Us
-            </a>
-          </div> */}
-          <div className="flex flex-nowrap justify-center items-center gap-4">
+          <div className="mt-6 flex flex-wrap items-center gap-4">
             <a
               href="#explore"
               onClick={() => scrollToSection(aboutRef)}
-              className="flex items-center px-5 py-2 font-josefin bg-white text-teal-700 rounded-full font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105"
+              className="flex items-center px-6 py-3 font-josefin  bg-white text-teal-700 rounded-full font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105"
             >
               Learn More
-              <FiArrowDownRight className="text-2xl" />
+              <FiArrowDownRight className="text-2xl ml-2" />
             </a>
             <a
               href="#contact"
               onClick={() => scrollToSection(contactRef)}
-              className="px-5 py-2 bg-transparent font-josefin border-2 border-white text-white rounded-full font-semibold hover:bg-darkBlue hover:text-white transition duration-300 transform hover:scale-105"
+              className="px-6 py-3 font-josefin hidden md:block bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-darkBlue hover:text-white transition duration-300 transform hover:scale-105"
             >
               Contact Us
             </a>
@@ -554,7 +542,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-gray-800 mb-4 font-josefin">
                 We Are A Key Player In Several Sectors
               </h2>
-              <p className="text-base text-gray-600 mb-6 font-lato ">
+              <p className="text-base text-gray-600 mb-6 font-josefin ">
                 Since its inception in 2011, Axion Group Limited conducted its
                 business transactions in accordance with its core values of
                 integrity, customer focus, excellence, efficiency, and
@@ -564,7 +552,7 @@ export default function Home() {
                 corporate organizations, transportation companies, and
                 government agencies.
               </p>
-              <div className="flex items-center">
+              <div className="flex items-center font-josefin">
                 <img
                   src={teamMember1}
                   alt="Dr. Jude Obaikor"
@@ -589,7 +577,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-center mb-4 font-josefin">
               Our Services
             </h2>
-            <p className="text-center text-gray-600 mb-12 font-lato px-5">
+            <p className="text-center text-gray-600 mb-12 font-josefin px-5">
               Axion Group delivers a diverse range of services across multiple
               sectors, ensuring quality, innovation, and excellence.
             </p>
@@ -724,7 +712,7 @@ export default function Home() {
         </Fade>
       </section> */}
 
-      <section className="bg-gray-50 py-16 px-4" ref={contactRef}>
+      <section className="bg-gray-50 py-16 px-4  font-josefin" ref={contactRef}>
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 font-josefin">
             Connect with one of our global offices
@@ -777,7 +765,7 @@ export default function Home() {
                   <p className="font-semibold text-gray-800 font-josefin">
                     Press / Media / Blogger Information
                   </p>
-                  <p className="font-semibold text-gray-800 mt-2 font-lato">
+                  <p className="font-semibold text-gray-800 mt-2 font-josefin">
                     Leave Us A Mail*{" "}
                   </p>
                   <a
